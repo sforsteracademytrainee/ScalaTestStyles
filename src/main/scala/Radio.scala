@@ -3,8 +3,8 @@ object Radio {
   private var on: Boolean = false;
 
   def isOn(): Boolean = on
-  def turnOn(): Unit = on = true
-  def turnOff(): Unit = on = false
+  def turnOn(): Unit = {on = true}
+  def turnOff(): Unit = {on = false}
 
   def getVolume(): Int = volume
   def turnUp(): Unit = {
