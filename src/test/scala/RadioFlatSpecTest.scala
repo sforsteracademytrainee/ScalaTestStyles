@@ -1,4 +1,6 @@
-class RadioFlatSpecTest extends FlatSpecClass
+import org.scalatest.flatspec.AnyFlatSpec
+
+class RadioFlatSpecTest extends AnyFlatSpec
 {
   "A Radio" should "be off" in
   {
@@ -12,10 +14,9 @@ class RadioFlatSpecTest extends FlatSpecClass
     assert(Radio.isOn() === true)
   }
 
-  "Volume" should "go up to 2" in
+  "Volume" should "go up to 1" in
   {
-    Radio.reset()
     Radio.turnUp()
-    assert(Radio.getVolume() === 2)
+    assert(Radio.getVolume() === 1)
   }
 }
