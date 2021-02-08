@@ -13,4 +13,9 @@ object Radio {
   def turnDown(): Unit = {
     if (volume > 0) volume -= 1
   }
+
+  def reset(): Unit = {
+    on = false
+    volume = 0
+  }
 }
