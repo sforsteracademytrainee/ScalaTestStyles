@@ -1,5 +1,5 @@
 object Runner extends App{
 
-  //run project
+  println("Running tests")
 
 }
