@@ -1,4 +1,6 @@
 object Runner extends App {
 
-  println("Hey")
+
+  println("Running tests")
+
 }
